@@ -9,6 +9,7 @@ function App() {
         <Hello message="Здравствуй Мир!"/>
         <Hello message="Здоровнькі були!"/>
         <Button text="Жмакни меня" />
+        <Button text="Жмакни меня" />
     </div>
     );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Hello from './Hello';
+import Button from './Button';
 
 function App() {
     return (
@@ -7,7 +8,8 @@ function App() {
         <Hello message="Hello World!" />
         <Hello message="Здравствуй Мир!"/>
         <Hello message="Здоровнькі були!"/>
-      </div>
+        <Button text="Жмакни меня" />
+    </div>
     );
 }
   

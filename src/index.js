@@ -4,12 +4,26 @@ import './index.css';
 // import App from './App';
 
 // JSX
-function Hello() {
-  return <div>Hello World</div>;
+// Компоненты. Функциональные, классовые
+// У компонента есть данные: свойства (props) и состояния (state)
+function Hello(props) {
+  return <div style={{ color: 'red' }} title={props.message} className="someclass" data-id="0">
+    {props.message}
+  </div>;
 }
 
-ReactDOM.render(
-   //React.createElement('div', {}, 'Hello World'),
-   <Hello />,
+function App() {
+  return (
+    <div>
+      <Hello message="Hello World!" />
+      <Hello message="Здравствуй Мир!"/>
+      <Hello message="Здоровнькі були!"/>
+    </div>
+  );
+}
+
+
+ReactDOM.render(   
+   <App />, //React.createElement('div', {}, 'Hello World'),
    document.getElementById('root')
 );
